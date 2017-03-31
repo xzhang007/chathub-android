@@ -21,12 +21,21 @@ import android.support.test.runner.AndroidJUnit4;
 import android.test.suitebuilder.annotation.LargeTest;
 
 import org.junit.Rule;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import edu.sfsu.csc780.chathub.ui.MainActivity;
 
+import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.click;
+import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
+import static android.support.test.espresso.action.ViewActions.typeText;
+import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.support.test.espresso.matcher.ViewMatchers.withText;
+
 @RunWith(AndroidJUnit4.class)
-@LargeTest
+
 public class MainActivityEspressoTest {
 
     @Rule
@@ -34,4 +43,15 @@ public class MainActivityEspressoTest {
             new ActivityTestRule<>(MainActivity.class);
 
     // Add instrumentation test here
+    @Test
+    public void ensureMessageFieldClearsAfterSend() {
+        // Use a ViewMatcher withId() to get the correct view and use a ViewAction typeText()
+        onView(withId(R.id.messageEditText)).perform(typeText("Testing 1, 2, 3"), closeSoftKeyboard());
+
+        // Use ViewMatcher withId() again and the ViewAction click()
+        onView(withId(R.id.sendButton)).perform(click());
+
+         //Again use withId() matcher, but now use ViewAssertion matches() to verify state of view
+         onView(withId(R.id.messageEditText)).check(matches(withText("")));
+        }
 }
