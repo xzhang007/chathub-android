@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "183532939271",
-    "firebase_url": "https://chathub-spring-2017.firebaseio.com",
-    "project_id": "chathub-spring-2017",
-    "storage_bucket": "chathub-spring-2017.appspot.com"
+    "project_number": "302903166121",
+    "firebase_url": "https://chathub-project-6bf72.firebaseio.com",
+    "project_id": "chathub-project-6bf72",
+    "storage_bucket": "chathub-project-6bf72.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:183532939271:android:123c68aba501e686",
+        "mobilesdk_app_id": "1:302903166121:android:123c68aba501e686",
         "android_client_info": {
           "package_name": "edu.sfsu.csc780.chathub"
         }
       },
       "oauth_client": [
         {
-          "client_id": "183532939271-9k0ik877bs0oog0op1cbrbttss44sdab.apps.googleusercontent.com",
+          "client_id": "302903166121-c5ddje3usi87dm9tt7m1ec4maapmt27f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.sfsu.csc780.chathub",
+            "certificate_hash": "3914bfc4c7d9218c4fbf642dc3409d211ba4f27f"
+          }
+        },
+        {
+          "client_id": "302903166121-3ii6s9a3d8h78sammp4c752906onrqgd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDCiZzowkzIliY5VvL6LSxpjvpb-xsNShw"
+          "current_key": "AIzaSyBb3v0uIpQXzYeaHIZIqQHks3I_W5SCfOo"
         }
       ],
       "services": {
@@ -32,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "183532939271-9k0ik877bs0oog0op1cbrbttss44sdab.apps.googleusercontent.com",
+              "client_id": "302903166121-3ii6s9a3d8h78sammp4c752906onrqgd.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
